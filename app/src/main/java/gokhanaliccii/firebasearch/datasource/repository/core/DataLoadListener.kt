@@ -1,6 +1,6 @@
-package gokhanaliccii.firebasearch.datasource.repository
+package gokhanaliccii.firebasearch.datasource.repository.core
 
-import gokhanaliccii.firebasearch.datasource.base.FirebaseModel
+import gokhanaliccii.firebasearch.datasource.model.FirebaseModel
 
 /**
  * Created by gokhan on 02/04/18.
