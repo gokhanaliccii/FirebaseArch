@@ -1,8 +1,9 @@
-package gokhanaliccii.firebasearch
+package gokhanaliccii.firebasearch.ui
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.google.firebase.database.FirebaseDatabase
+import gokhanaliccii.firebasearch.R
 
 class MainActivity : AppCompatActivity() {
 
