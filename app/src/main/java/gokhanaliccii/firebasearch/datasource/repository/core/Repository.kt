@@ -9,9 +9,9 @@ interface Repository<T : FirebaseModel> {
 
     fun loadData(dataLoadListener: DataLoadListener<T>)
 
-    fun saveData(indentListener: DataIndentListener, data: T)
+    fun saveData(data: T, indentListener: DataIndentListener)
 
-    fun deleteData(indentListener: DataIndentListener, data: T)
+    fun deleteData(data: T, indentListener: DataIndentListener)
 
-    fun updateData(indentListener: DataIndentListener,   data: T)
+    fun updateData(data: T, indentListener: DataIndentListener)
 }
