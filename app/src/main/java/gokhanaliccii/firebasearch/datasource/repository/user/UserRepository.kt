@@ -31,7 +31,12 @@ class UserRepository(dbRef: DatabaseReference) : Repository<User> {
     }
 
     override fun saveData(data: User, indentListener: DataIndentListener) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        dbReference.setValue(data) { error, dbRef ->
+            if (error == null)
+                indentListener.onIndentSucceed()
+            else
+                indentListener.onIndentFailed()
+        }
     }
 
     override fun deleteData(data: User, indentListener: DataIndentListener) {
